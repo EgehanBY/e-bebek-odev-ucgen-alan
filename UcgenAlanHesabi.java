@@ -14,10 +14,11 @@ public class UcgenAlanHesabi {
         boolean ucgenSarti;
         // 1. ve 2. kenar toplamının 3. kenardan küçük olması şartı koşulur
         ucgenSarti=  (((a+b)>c) && ((a+c)>b) && ((b+c)>a));
+        String ucgen = ucgenSarti ? "" : "Girdiğiniz değerler bir üçgen oluşturmamaktadır.";
         cevre=a+b+c;
         u=cevre/2;
         alan= Math.sqrt(u*(u-a)*(u-b)*(u-c));
-
+        System.out.println(ucgen);
         System.out.println("Üçgeninizin alanı : " +alan);
 
 
